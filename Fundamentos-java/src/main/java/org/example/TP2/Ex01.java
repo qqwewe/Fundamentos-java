@@ -43,14 +43,19 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Ex01 ex01 = new Ex01();
+
         System.out.println("Digite o seu nome completo: ");
         ex01.setNomeUsuario(sc.next());
+
         System.out.println("Digite o sua idade em formato número (EX: 24)");
         ex01.setIdade(sc.nextInt());
+
         System.out.println("Digite o nome da sua mãe: ");
         ex01.setNomeMae(sc.next());
+
         System.out.println("Digite o nome do seu pai: ");
         ex01.setNomePai(sc.next());
+
         System.out.println("Nome do usuário: " + ex01.getNomeUsuario());
         System.out.println("Idade do usuário: " + ex01.getIdade());
         System.out.println("Nome do mae: " + ex01.getNomeMae());
@@ -59,5 +64,6 @@ public class Ex01 {
                 "Nome do usuário é maior do que o nome da mãe" :
                 "Nome do usuário é menor ou igual do que o nome da mãe");
 
+        sc.close();
     }
 }

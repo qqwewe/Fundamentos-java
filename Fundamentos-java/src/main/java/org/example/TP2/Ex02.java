@@ -22,5 +22,6 @@ public class Ex02 {
         } else if (media < 5){
             System.out.println("Você foi reprovado");
         }
+        sc.close();
     }
 }
